@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ci7bo8x4w7m4m"]
 
 [ext_resource type="Texture2D" uid="uid://cqcg0ilo530bu" path="res://src/assets/visual/title.png" id="1_vyvsi"]
-[ext_resource type="Theme" uid="uid://mwlt321683iu" path="res://src/scenes/theme.tres" id="2_3mhcb"]
+[ext_resource type="Theme" uid="uid://mwlt321683iu" path="res://src/assets/visual/theme.tres" id="2_3mhcb"]
 
 [node name="TitleScreen" type="Control"]
 layout_mode = 3

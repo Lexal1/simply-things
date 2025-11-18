@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dsxhugusf58aq"]
 
 [ext_resource type="Script" path="res://src/scripts/global.gd" id="1_oxe11"]
-[ext_resource type="Script" path="res://src/scenes/global_music.gd" id="2_7w55h"]
+[ext_resource type="Script" path="res://src/scripts/global_music.gd" id="2_7w55h"]
 
 [sub_resource type="Animation" id="Animation_ediby"]
 length = 0.001

@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://c2owayamwboyv" path="res://src/assets/visual/DTM-Mono.otf" id="4_5px26"]
 [ext_resource type="AudioStream" uid="uid://c0nw3yvg14jfx" path="res://src/assets/audial/sfx/voice/talk_done.wav" id="5_40inq"]
 [ext_resource type="AudioStream" uid="uid://cnknowcj5l2sp" path="res://src/assets/audial/sfx/voice/talk_game.ogg" id="5_pa6nk"]
-[ext_resource type="Theme" uid="uid://mwlt321683iu" path="res://src/scenes/theme.tres" id="6_m1hew"]
+[ext_resource type="Theme" uid="uid://mwlt321683iu" path="res://src/assets/visual/theme.tres" id="6_m1hew"]
 [ext_resource type="FontFile" uid="uid://csyem60wjye7r" path="res://src/assets/visual/DTM-Sans.otf" id="7_mbgs6"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_235ry"]
