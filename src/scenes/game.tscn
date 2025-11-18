@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddrutc4pd4si4"]
+
+[ext_resource type="Script" path="res://src/scripts/game.gd" id="1_bty0n"]
+[ext_resource type="PackedScene" uid="uid://cdhvxuq3p0bsu" path="res://src/scenes/camera.tscn" id="3_5xseb"]
+[ext_resource type="PackedScene" uid="uid://dvb6yejxc1e67" path="res://src/scenes/player.tscn" id="3_d6v6o"]
+[ext_resource type="PackedScene" uid="uid://gbr63s8v5uyn" path="res://src/scenes/maps/ruins/ruins01.tscn" id="4_sobr2"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_bty0n")
+
+[node name="player" parent="." instance=ExtResource("3_d6v6o")]
+position = Vector2(476, 620)
+
+[node name="Camera" parent="." node_paths=PackedStringArray("player") instance=ExtResource("3_5xseb")]
+player = NodePath("../player")
+
+[node name="Map" parent="." instance=ExtResource("4_sobr2")]
+y_sort_enabled = true

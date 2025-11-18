@@ -1,0 +1,8 @@
+~ start
+if Global.inventory == []
+	you dont have anything. poor
+=> END
+
+~ generic
+A perfectly generic, flawless item.
+=> END

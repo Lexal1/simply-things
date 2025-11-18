@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://bqglwychd6ee6"
+path="res://.godot/imported/ruins_racetrack.dialogue-e226dedf54ec20f432b65e8289b63439.tres"
+
+[deps]
+
+source_file="res://src/scripts/dialogue/ruins_racetrack.dialogue"
+dest_files=["res://.godot/imported/ruins_racetrack.dialogue-e226dedf54ec20f432b65e8289b63439.tres"]
+
+[params]
+
+defaults=true

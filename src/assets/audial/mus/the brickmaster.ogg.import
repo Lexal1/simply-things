@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bvw65ovqwdm8b"
+path="res://.godot/imported/the brickmaster.ogg-7c0b07eb35481b3d5531c5312ec5fd19.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/audial/mus/the brickmaster.ogg"
+dest_files=["res://.godot/imported/the brickmaster.ogg-7c0b07eb35481b3d5531c5312ec5fd19.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

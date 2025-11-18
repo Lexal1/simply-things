@@ -1,0 +1,19 @@
+~ locked
+%50 It's locked.
+%10 It is locked.
+%10 It doesn't budge. It must be locked.
+%5 Wait... this is locked!
+% If you haven't already noticed, this is locked
+% This is the most locked thing you have ever seen.
+% This is the second most locked thing you have ever seen.
+% The lock is more locked than the locked lock lock
+=> END
+
+~ hidden_locked
+Well, there is a door here.
+...but it's locked.
+=> END
+
+~ off
+It's [[off|unplugged|switched off|asleep|not responding]].
+=> END

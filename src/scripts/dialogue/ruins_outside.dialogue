@@ -1,0 +1,83 @@
+~ start
+kill the sun
+=> END
+
+~ tree_advice1
+bell: Trees CAN talk, silly!
+bell: Whatever gave you the impression that they didn't?
+=> END
+~ tree_advice2
+bell: Do you think all of us trees look the same?
+bell: Think again! We do look slightly different to our non-sapient counterparts
+=> END
+
+~ gossip1
+synth: I've heard that Uncanny Cat Golf releases on a Saturday!
+synth: No one knows WHICH Saturday, but it's true.
+=> END
+~ gossip2
+synth: There's nothing in this hallway.
+~ gossip2_2
+synth: Trust me, I've checked
+=> END
+~ gossip3
+bell: I kind of miss the city.
+bell: Except for the smog
+bell: And the constant, irrepressible noise
+bell: And the light pollution blocking out the night sky
+bell: And the dirty water and unhealthy soil
+~ gossip3_2
+bell: You know what? I think I actually like it out here better.
+=> END
+~ gossip4
+synth: I used to live alone at this pond
+synth: And then this tree moved in.
+synth: I actually do kind of mind, but I'm too afraid to say anything in case I hurt her feelings
+=> END
+
+
+~ lore1
+synth: This is [color=yellow]THE BRICKS[/color]. As you can see, there's a lot of them.
+synth: It used to be just us GHUBBLEYs here, but recently a migration of TREEs happened recently
+synth: It's gotten a lot more crowded here...
+=> END
+~ lore2
+synth: [color=yellow]THE GATE[/color] lies beyond these stairs.
+synth: It has been sealed for, uh, probably a very, very long time. It's no use trying to open it
+=> END
+~ lore3
+synth: [color=yellow]THE GATE[/color] was sealed. It has not been unsealed since.
+synth: It'd be pretty neat if it was ever unsealed, but I don't think any of us would leave. We live here, after all
+=> END
+~ lore4
+bell: I've heard that the smog from [color=yellow]BUSIMO CITY[/color] has gotten quite bad of late
+bell: More and more TREEs keep moving out here to [color=yellow]THE BRICKS[/color]
+bell: No one knows who's in charge of that city anymore
+=> END
+
+
+~ sign1
+THOSE WHO WISH TO LEAVE MUST UNSEAL THE DOOR.
+HA HA. GOOD LUCK WITH THAT - THE BRICKMASTER
+=> END
+~ sign2
+WELCOME TO THE [color=yellow]THE BRICKS[/color]. - THE BRICKMASTER
+=> END
+~ sign3
+NOW APPROACHING [color=yellow]DOWNTOWN THE BRICKS[/color]. - THE BRICKMASTER
+=> END
+
+
+
+
+
+
+~ hater1
+I think I really, really, REALLY, REALLY hate stairs
+Like, you cannot possibly imagine my loathing for stairs. It is simply beyond your comprehension.
+- i can not imagine it
+	Yeah, that's- that's what I just said
+- i can imagine it
+	Oh
+	Yeah, whatever.
+=> END

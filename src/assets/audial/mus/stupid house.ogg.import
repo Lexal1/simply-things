@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bd6g1352fhhwy"
+path="res://.godot/imported/stupid house.ogg-8518d91a132fd7b5410e5e14a575b558.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/audial/mus/stupid house.ogg"
+dest_files=["res://.godot/imported/stupid house.ogg-8518d91a132fd7b5410e5e14a575b558.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

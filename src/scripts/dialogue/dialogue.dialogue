@@ -1,0 +1,48 @@
+~ temp
+[[Hi|Hello|Howdy]], this is some dialogue.
+Here are some choices.
+- First one
+	You picked the first one.
+- Second one
+	You picked the second one.
+- Start again
+	Sorry.
+- End the conversation => temp_2
+For more information see                       .
+=> END
+~ temp_2
+...doesn't seem to want to stop talking yet.
+What do you think?
+- Yes
+	Maybe no, maybe yes.
+- No
+	Maybe yes, maybe no.
+...wrote a little poem.
+	Want to hear it?
+- Yes
+	Hello, greetings to all
+		The sun is a shining ball
+	Its rays dance upon the world
+		In the sky, a storm swirled
+	Down the rain came
+		Nothing was the same
+	What do you think?
+	- Good
+		...thanks you.
+		You have a lot of things left to do.
+		You should go now.
+	- Bad
+		Sorry.
+- No
+	Sorry.
+=> END
+
+
+~ start
+dude: Yo yo my maaaan what is uuuuuup
+dude: I got this old busted game console right here that i've been tryna fix
+dude: You wanna help lil bro? you're gonna need to find a replacement part
+~ start_2
+dude: I ordered a part from the world wide web but it hasn't gotten here yet.
+dude: Totally a bummer, man.
+=> END

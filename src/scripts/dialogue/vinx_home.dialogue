@@ -1,0 +1,18 @@
+~ start
+
+~ flower
+What a [[pretty|beautiful|goregous]] flower!
+=> END
+
+~ odd_flower
+What an odd flower.
+=> END
+
+~ door
+You heard him.
+=> END
+
+~ grass
+This is a short piece of grass.
+Ironically, you feel even shorter right now...
+=> END

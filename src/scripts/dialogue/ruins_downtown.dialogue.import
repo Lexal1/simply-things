@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://fnym2hf1kspa"
+path="res://.godot/imported/ruins_downtown.dialogue-21fea8c249e9ce300aab0f7e4d2ebd71.tres"
+
+[deps]
+
+source_file="res://src/scripts/dialogue/ruins_downtown.dialogue"
+dest_files=["res://.godot/imported/ruins_downtown.dialogue-21fea8c249e9ce300aab0f7e4d2ebd71.tres"]
+
+[params]
+
+defaults=true

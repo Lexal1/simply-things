@@ -1,0 +1,64 @@
+~ start
+kill the sun
+=> END
+
+~ gossip1
+Wow, this TV show sucks
+=> END
+~ gossip1_2
+Wow, this TV show sucks
+=> END
+~ gossip2
+morocco
+=> END
+~ gossip2_3
+synth: Morocco, officially the Kingdom of Morocco, is a country in the Maghreb region of North Africa.[next=0.5]
+synth: It has coastlines on the Mediterranean Sea to the north and the Atlantic Ocean to the west,[next=0.1]
+synth: and has land borders with Algeria to the east, and the disputed territory of Western Sahara to the south.[next=0.25]
+synth: Morocco also claims the Spanish exclaves of Ceuta, Melilla and Peñón de Vélez de la Gomera,[next=0.1]
+synth: and several small Spanish-controlled islands off its coast.[next=0.25]
+synth: It has a population of approximately 37 million. Islam is both the official and predominant religion,[next=0.1]
+synth: whilst Arabic and Berber are the official languages.[next=0.25]
+synth: Additionally, French and the Moroccan dialect of Arabic are widely spoken.[next=0.1]
+synth: The culture of Morocco is a mix of Arab, Berber, African and European cultures.[next=0.1]
+synth: Its capital is Rabat, while its largest city is Casablanca.[next=1]
+synth: THAT'S "morocco".
+=> END
+~ gossip2p2
+bell: Do- do you know what "morocco" means?
+bell: That GHUBBLEY has done nothing but stare into the water and mumble "morocco"...
+=> END
+~ gossip2p2_2
+bell: It's really starting to freak me out, honestly.
+=> END
+
+
+~ gossip3
+I got locked out of my house again...
+=> END
+~ gossip3_2
+Third time this week...
+=> END
+~ gossip3_3
+i literally just told you that the door was locked, why did you try the knob anyway
+=> END
+~ gossip4
+I think if this plant died, I would kill God and then myself
+=> END
+~ gossip4_2
+I don't think you understand how precious this plant is to me. this plant is my lifeforce, and if it dies, then i die with it
+=> END
+
+~ lore1
+I actually used to live in [color=yellow]ASBESTOS DESERT[/color]
+Whenever the wind started to blow, it got pretty hard to breathe...
+That's why I moved here. And with the sudden influx of TREEs, the air is nice and clear of carcinogens
+=> END
+~ lore2
+The BRICKMASTER is the one who put the signs up.
+They're not actually wood, they're just bricks painted brown.
+=> END
+
+~ sign1
+SERIOUS INQUIRIES ONLY! - THE BRICKMASTER
+=> END

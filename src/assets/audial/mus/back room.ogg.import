@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dos1m5gtdi2ai"
+path="res://.godot/imported/back room.ogg-f201060fb5ba798e99ad24491b90a943.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/audial/mus/back room.ogg"
+dest_files=["res://.godot/imported/back room.ogg-f201060fb5ba798e99ad24491b90a943.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

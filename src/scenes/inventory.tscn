@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://befprvsrry0fw"]
+
+[node name="Inventory" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 52.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Animation" type="AnimationPlayer" parent="ColorRect"]

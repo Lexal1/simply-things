@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://c22f7d4hhu15h"]
+
+[ext_resource type="PackedScene" uid="uid://lq66abt078ol" path="res://src/scenes/npcs/npc.tscn" id="1_wpkhi"]
+[ext_resource type="Texture2D" uid="uid://fv557ae8bf0b" path="res://src/assets/visual/npcs.png" id="2_b74u1"]
+[ext_resource type="Resource" uid="uid://do3pqmffhkuvs" path="res://src/scripts/dialogue/gloopo.dialogue" id="2_xhvaq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxar1"]
+atlas = ExtResource("2_b74u1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bod2j"]
+atlas = ExtResource("2_b74u1")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ox8xl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxar1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bod2j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="NPC" instance=ExtResource("1_wpkhi")]
+dialogue = ExtResource("2_xhvaq")
+
+[node name="Sprite" parent="." index="1"]
+sprite_frames = SubResource("SpriteFrames_ox8xl")
+frame_progress = 0.0465594

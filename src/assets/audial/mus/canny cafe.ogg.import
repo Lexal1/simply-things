@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://j41i7ityms0o"
+path="res://.godot/imported/canny cafe.ogg-65cccb8f690eb83c408367dc29eeb44e.oggvorbisstr"
+
+[deps]
+
+source_file="res://src/assets/audial/mus/canny cafe.ogg"
+dest_files=["res://.godot/imported/canny cafe.ogg-65cccb8f690eb83c408367dc29eeb44e.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=103.0
+beat_count=0
+bar_beats=4

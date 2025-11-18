@@ -1,0 +1,119 @@
+[gd_scene load_steps=10 format=3 uid="uid://dsxhugusf58aq"]
+
+[ext_resource type="Script" path="res://src/scripts/global.gd" id="1_oxe11"]
+[ext_resource type="Script" path="res://src/scenes/global_music.gd" id="2_7w55h"]
+
+[sub_resource type="Animation" id="Animation_ediby"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_y2u8m"]
+resource_name = "cut from black"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_dok0i"]
+resource_name = "cut to black"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6i10v"]
+_data = {
+"RESET": SubResource("Animation_ediby"),
+"cut from black": SubResource("Animation_y2u8m"),
+"cut to black": SubResource("Animation_dok0i")
+}
+
+[sub_resource type="Animation" id="Animation_ky665"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Audio:volume")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.1]
+}
+
+[sub_resource type="Animation" id="Animation_7wum4"]
+resource_name = "fade"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Audio:volume")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hlw1d"]
+_data = {
+"RESET": SubResource("Animation_ky665"),
+"fade": SubResource("Animation_7wum4")
+}
+
+[node name="Global" type="Node"]
+script = ExtResource("1_oxe11")
+
+[node name="Black" type="ColorRect" parent="."]
+z_index = 99
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Transition" type="AnimationPlayer" parent="Black"]
+libraries = {
+"": SubResource("AnimationLibrary_6i10v")
+}
+
+[node name="Audio" type="AudioStreamPlayer" parent="."]
+script = ExtResource("2_7w55h")
+
+[node name="Animation" type="AnimationPlayer" parent="Audio"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_hlw1d")
+}

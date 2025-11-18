@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://do3pqmffhkuvs"
+path="res://.godot/imported/gloopo.dialogue-1df3229d666ecc37e6d4600d23750396.tres"
+
+[deps]
+
+source_file="res://src/scripts/dialogue/gloopo.dialogue"
+dest_files=["res://.godot/imported/gloopo.dialogue-1df3229d666ecc37e6d4600d23750396.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://ds4eltteyhikm"]
+
+[ext_resource type="PackedScene" uid="uid://lq66abt078ol" path="res://src/scenes/npcs/npc.tscn" id="1_q74js"]
+[ext_resource type="Texture2D" uid="uid://fv557ae8bf0b" path="res://src/assets/visual/npcs.png" id="2_wevui"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6u0c2"]
+atlas = ExtResource("2_wevui")
+region = Rect2(0, 160, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dv6v2"]
+atlas = ExtResource("2_wevui")
+region = Rect2(0, 208, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_33eqg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6u0c2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dv6v2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="NPC" instance=ExtResource("1_q74js")]
+
+[node name="Sprite" parent="." index="1"]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_33eqg")

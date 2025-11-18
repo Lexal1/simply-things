@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://bnqfvnycm8poo"]
+
+[ext_resource type="PackedScene" uid="uid://cb136kschepwe" path="res://src/scenes/maps/map template.tscn" id="1_4qq8s"]
+[ext_resource type="Texture2D" uid="uid://diptxopwx7x2l" path="res://src/assets/visual/beginnin gs.png" id="2_6yf71"]
+[ext_resource type="PackedScene" uid="uid://lq66abt078ol" path="res://src/scenes/npcs/npc.tscn" id="3_wrrgp"]
+[ext_resource type="Resource" uid="uid://cqo5oyj0soxoj" path="res://src/scripts/dialogue/vinx_home.dialogue" id="4_ea65h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3b454"]
+size = Vector2(34, 16)
+
+[node name="Map" instance=ExtResource("1_4qq8s")]
+
+[node name="Sprite2D" type="Sprite2D" parent="." index="2"]
+texture = ExtResource("2_6yf71")
+centered = false
+
+[node name="Boundries" type="StaticBody2D" parent="." index="3"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Boundries" index="0"]
+polygon = PackedVector2Array(152, 123, 813, 78, 937, 95, 1262, 62, 1296, 71, 1348, 74, 1349, 80, 1494, 74, 1498, 81, 1525, 82, 1596, 73, 1725, 72, 1725, 82, 1943.55, 80.116, 2038, 88, 2206, 82, 2210, 88, 2348, 70, 2350, 81, 2420, 77, 2417, 119, 2490, 221, 901, 219, 152, 131, 0, 240, 2560, 240, 2560, 0, 0, 0, 0, 239, 152, 131)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Boundries" index="1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Boundries/StaticBody2D" index="0"]
+position = Vector2(177, 127)
+rotation = -1.5708
+shape = SubResource("RectangleShape2D_3b454")
+one_way_collision = true
+
+[node name="flowers" type="Node" parent="." index="4"]
+
+[node name="NPC" parent="flowers" index="0" instance=ExtResource("3_wrrgp")]
+position = Vector2(1965, 222)
+dialogue = ExtResource("4_ea65h")
+pointer = "odd_flower"
+
+[node name="NPC2" parent="flowers" index="1" instance=ExtResource("3_wrrgp")]
+position = Vector2(2054, 199)
+dialogue = ExtResource("4_ea65h")
+pointer = "flower"
+
+[node name="NPC3" parent="flowers" index="2" instance=ExtResource("3_wrrgp")]
+position = Vector2(2126, 228)
+dialogue = ExtResource("4_ea65h")
+pointer = "flower"
+
+[node name="NPC4" parent="flowers" index="3" instance=ExtResource("3_wrrgp")]
+position = Vector2(2183, 213)
+dialogue = ExtResource("4_ea65h")
+pointer = "flower"
+
+[node name="door" parent="." index="5" instance=ExtResource("3_wrrgp")]
+position = Vector2(2456, 168)
+dialogue = ExtResource("4_ea65h")
+pointer = "door"
+
+[node name="grass" parent="." index="6" instance=ExtResource("3_wrrgp")]
+position = Vector2(1426, 212)
+dialogue = ExtResource("4_ea65h")
+pointer = "grass"
+
+[editable path="flowers/NPC"]
+[editable path="flowers/NPC2"]
+[editable path="flowers/NPC3"]
+[editable path="flowers/NPC4"]
+[editable path="door"]
+[editable path="grass"]

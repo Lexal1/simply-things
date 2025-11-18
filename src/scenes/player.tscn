@@ -1,0 +1,162 @@
+[gd_scene load_steps=17 format=3 uid="uid://dvb6yejxc1e67"]
+
+[ext_resource type="Script" path="res://src/scripts/player.gd" id="1_21va8"]
+[ext_resource type="Texture2D" uid="uid://pcc5d36i65je" path="res://src/assets/visual/vinx.png" id="2_4o1en"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vv7o1"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sx4jp"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tr33k"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1vse"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxgvi"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aor6n"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0bjy"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjpfx"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2endb"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obabk"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03yri"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evlqr"]
+atlas = ExtResource("2_4o1en")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_onnmt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vv7o1")
+}],
+"loop": true,
+"name": &"back_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sx4jp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tr33k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1vse")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tr33k")
+}],
+"loop": true,
+"name": &"back_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxgvi")
+}],
+"loop": true,
+"name": &"front_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aor6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0bjy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjpfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0bjy")
+}],
+"loop": true,
+"name": &"front_walk",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2endb")
+}],
+"loop": true,
+"name": &"side_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obabk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03yri")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evlqr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03yri")
+}],
+"loop": true,
+"name": &"side_walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vg53c"]
+radius = 4.0
+height = 14.0
+
+[node name="player" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_21va8")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_onnmt")
+animation = &"front_idle"
+autoplay = "front_idle"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_vg53c")
+
+[node name="NPCCast" type="RayCast2D" parent="."]
+position = Vector2(0, -12)
+target_position = Vector2(0, 10)
+hit_from_inside = true
+collide_with_areas = true
+collide_with_bodies = false
+
+[node name="OnScreen" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(0, 2)
+rect = Rect2(-10, -30, 20, 27)
+
+[connection signal="screen_exited" from="OnScreen" to="." method="_on_on_screen_screen_exited"]

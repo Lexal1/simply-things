@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://0y4no3ud7yh3"]
+
+[ext_resource type="Script" path="res://src/scripts/door.gd" id="1_6ml1d"]
+
+[node name="Door" type="Area2D"]
+y_sort_enabled = true
+monitorable = false
+script = ExtResource("1_6ml1d")
+
+[node name="Collision" type="CollisionPolygon2D" parent="."]
+
+[node name="Destination" type="Marker2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

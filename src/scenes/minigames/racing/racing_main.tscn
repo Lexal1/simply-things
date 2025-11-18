@@ -1,0 +1,83 @@
+[gd_scene load_steps=12 format=3 uid="uid://bipcueuskudk7"]
+
+[ext_resource type="Texture2D" uid="uid://pcc5d36i65je" path="res://src/assets/visual/vinx.png" id="1_cggui"]
+[ext_resource type="Script" path="res://src/scenes/minigames/racing/player.gd" id="1_e55sh"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_20mw2"]
+sky_top_color = Color(0.129, 0.129, 0.129, 1)
+sky_horizon_color = Color(0.129, 0.129, 0.129, 1)
+ground_bottom_color = Color(0.129, 0.129, 0.129, 1)
+ground_horizon_color = Color(0.129, 0.129, 0.129, 1)
+
+[sub_resource type="Sky" id="Sky_vgtdg"]
+sky_material = SubResource("ProceduralSkyMaterial_20mw2")
+
+[sub_resource type="Environment" id="Environment_k0q30"]
+background_mode = 2
+sky = SubResource("Sky_vgtdg")
+tonemap_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rwi7n"]
+size = Vector2(50, 25)
+subdivide_width = 2
+subdivide_depth = 2
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_mhige"]
+radius = 0.197546
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njsnm"]
+atlas = ExtResource("1_cggui")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4asp"]
+atlas = ExtResource("1_cggui")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7yaug"]
+atlas = ExtResource("1_cggui")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cifnb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njsnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k4asp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7yaug")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="RacingMini" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_k0q30")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_rwi7n")
+skeleton = NodePath("")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.97184, 0)
+script = ExtResource("1_e55sh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("SphereShape3D_mhige")
+
+[node name="Sprite" type="AnimatedSprite3D" parent="Player"]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_cifnb")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.33523)
+current = true

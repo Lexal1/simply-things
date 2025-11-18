@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cqo5oyj0soxoj"
+path="res://.godot/imported/vinx_home.dialogue-2d3fa0523b526eb4e0ad31d34d343a6d.tres"
+
+[deps]
+
+source_file="res://src/scripts/dialogue/vinx_home.dialogue"
+dest_files=["res://.godot/imported/vinx_home.dialogue-2d3fa0523b526eb4e0ad31d34d343a6d.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,45 @@
+~ start
+kill the sun
+=> END
+
+~ gossip1
+bell: I'm being paid to live here and absorb CO2.
+bell: It's not all bad, but it can get very loud
+=> END
+~ gossip2
+synth: WHOA DUDE GLOOPO IS OVER THERE
+synth: I WATCHED HIS REAR END GET WHOOPED IN GLADIATORS SEASON 2!
+=> END
+~ gossip2_2
+synth: HE'S MY ABSOLUTE FAVORITE
+=> END
+~ gossip3
+synth: I hope a new race starts soon. It's been awful boring for the past who knows how long
+=> END
+~ gossip4
+synth: dont even ask
+=> END
+~ gossip4_2
+synth: what did i just tell you
+=> END
+~ gossip5
+synth: Everyone is here to watch the races.
+synth: there aren't even any happening soon
+=> END
+
+~ lore1
+synth: Welcome to [color=yellow]THE RACE TRACK[/color]
+synth: [color=yellow]THE BRICKMASTER[/color] had this place built so that he could race other denizens of THE BRICKS
+synth: Unfortunately, he's already beaten everyone else here, so he's mostly had to retire...
+=> END
+
+~ sign1
+HEY! GET OFF OF THE TRACK! - THE BRICKMASTER
+=> END
+
+~ cool
+dude: Yo yo my maaaan what is uuuuuup
+dude: If you wanna challenge [color=yellow]THE BRICKMASTER[/color] then you're fresh outta luck little man
+dude: he's in DOWNTOWN. There was a bridge, but it was destroyed.
+dude: Totally a bummer, man.
+=> END

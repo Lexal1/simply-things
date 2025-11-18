@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://lx4utkw263d0"
+path="res://.godot/imported/ruins_outside.dialogue-24021bf5ec8483a3748169437b9a21f9.tres"
+
+[deps]
+
+source_file="res://src/scripts/dialogue/ruins_outside.dialogue"
+dest_files=["res://.godot/imported/ruins_outside.dialogue-24021bf5ec8483a3748169437b9a21f9.tres"]
+
+[params]
+
+defaults=true

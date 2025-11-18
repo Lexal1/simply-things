@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci7bo8x4w7m4m"]
+
+[ext_resource type="Texture2D" uid="uid://cqcg0ilo530bu" path="res://src/assets/visual/title.png" id="1_vyvsi"]
+[ext_resource type="Theme" uid="uid://mwlt321683iu" path="res://src/scenes/theme.tres" id="2_3mhcb"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12549, 0.12549, 0.25098, 1)
+
+[node name="Sprite" type="Sprite2D" parent="ColorRect"]
+position = Vector2(200, 120)
+texture = ExtResource("1_vyvsi")
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+layout_mode = 2
+offset_right = 144.0
+offset_bottom = 43.0
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/MarginContainer"]
+z_index = 1
+layout_mode = 2
+theme_override_constants/separation = 9
+
+[node name="NewGame" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3mhcb")
+text = "START"
+
+[node name="LoadGame" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3mhcb")
+text = "CONTINUE
+"
+
+[node name="Options" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3mhcb")
+text = "OPTIONS"
+
+[node name="Quit" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_3mhcb")
+text = "Don't START
+"
