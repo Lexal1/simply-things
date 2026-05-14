@@ -25,7 +25,7 @@ func talk():
 	
 	if sprite.sprite_frames != null: sprite.play("default")
 	
-	DialogueManager.show_dialogue_balloon(dialogue)
+	DialogueManager.show_dialogue_balloon(dialogue, pointer)
 	await DialogueManager.dialogue_ended
 	
 	sprite.play("idle") if has_idle else sprite.stop()

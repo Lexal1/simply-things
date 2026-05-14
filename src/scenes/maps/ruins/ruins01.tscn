@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://lmo4b1fa3ydy" path="res://src/scenes/npcs/ruins/npc_Y.tscn" id="8_7wwft"]
 [ext_resource type="PackedScene" uid="uid://lq66abt078ol" path="res://src/scenes/npcs/npc.tscn" id="9_nmrd5"]
 [ext_resource type="PackedScene" uid="uid://b8irxern16krs" path="res://src/scenes/npcs/npc_sign.tscn" id="10_4n5bn"]
+[ext_resource type="Resource" uid="uid://bju1gu7y6fsxs" path="res://untitled.dialogue" id="10_uu0wf"]
 [ext_resource type="Resource" uid="uid://fnym2hf1kspa" path="res://src/scripts/dialogue/ruins_downtown.dialogue" id="10_vh3v3"]
 [ext_resource type="Resource" uid="uid://bv0l7u4iynddd" path="res://src/scripts/dialogue/generic.dialogue" id="11_6srko"]
 [ext_resource type="PackedScene" uid="uid://0y4no3ud7yh3" path="res://src/scenes/door.tscn" id="11_bveab"]
@@ -228,7 +229,7 @@ polygon = PackedVector2Array(28, 324, 304, 336, 304, 468, 624, 460, 644, 712, 12
 position = Vector2(520, 408)
 rotation = -3.14159
 scale = Vector2(1, -1)
-dialogue = ExtResource("4_qhdv4")
+dialogue = ExtResource("10_uu0wf")
 
 [node name="NPC2" parent="ZONES/The Bricks" index="2" unique_id=638247041 instance=ExtResource("3_qjc6k")]
 y_sort_enabled = false

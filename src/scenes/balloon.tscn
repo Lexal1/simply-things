@@ -170,7 +170,9 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/normal_font = ExtResource("7_mbgs6")
+theme_override_font_sizes/normal_font_size = 13
 text = "Dialogue..."
+skip_action = &"2"
 
 [node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer" unique_id=470011382]
 custom_minimum_size = Vector2(5, 3)

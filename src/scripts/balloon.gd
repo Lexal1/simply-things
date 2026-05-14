@@ -15,10 +15,10 @@ extends CanvasLayer
 @export var will_block_other_input: bool = true
 
 ## The action to use for advancing the dialogue
-@export var next_action: StringName = &"ui_accept"
+@export var next_action: StringName = &"1"
 
 ## The action to use to skip typing the dialogue
-@export var skip_action: StringName = &"ui_cancel"
+@export var skip_action: StringName = &"2"
 
 ## Temporary game states
 var temporary_game_states: Array = []
@@ -219,7 +219,7 @@ func _on_dialogue_label_spoke(letter: String, letter_index: int, speed: float) -
 	if not letter in [" ", ".", "!"]:
 		var actual_speed: int = 2 if speed >= 1 else 1
 		if letter_index % actual_speed == 0:
-			talk_sound.stream = VOICES.get(dialogue_line.character, 0)
+			talk_sound.stream = VOICES.get(dialogue_line.character, null)
 			if !talk_sound.playing: talk_sound.play()
 			var pitch = 1
 			talk_sound.pitch_scale = randf_range(pitch - 0.15, pitch + 0.15)
