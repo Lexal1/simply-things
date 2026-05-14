@@ -5,7 +5,7 @@ extends Area2D
 @export var pointer : String = "start"
 @export var has_idle : bool = false
 @export var has_secondary : bool = false ## Has secondary dialogue. will automatically change the pointer to *_2.
-@export var talked_to : NPC ## Has reactionary dialogue. will automatically change the pointer to *_3.
+@export var talked_to : NPC              ## Has reactionary dialogue. will automatically change the pointer to *_3.
 
 var talked : bool = false
 
@@ -21,14 +21,14 @@ func talk():
 	var prev = pointer
 	pointer = pointer+greenland
 	print(pointer)
+	print(dialogue)
 	
 	if sprite.sprite_frames != null: sprite.play("default")
 	
-	DialogueManager.show_dialogue_balloon(dialogue, pointer)
+	DialogueManager.show_dialogue_balloon(dialogue)
 	await DialogueManager.dialogue_ended
 	
-	if has_idle: sprite.play("idle")
-	else: sprite.stop()
+	sprite.play("idle") if has_idle else sprite.stop()
 	
 	if !talked: talked = true
 	
