@@ -1,8 +1,8 @@
 [gd_scene load_steps=17 format=3 uid="uid://51wfeapeepxr"]
 
-[ext_resource type="Script" path="res://src/scripts/balloon.gd" id="1_s2gbs"]
+[ext_resource type="Script" uid="uid://ckhw0smav2i0i" path="res://src/scripts/balloon.gd" id="1_s2gbs"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_hfvdi"]
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_1j1j0"]
+[ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_1j1j0"]
 [ext_resource type="FontFile" uid="uid://c2owayamwboyv" path="res://src/assets/visual/DTM-Mono.otf" id="4_5px26"]
 [ext_resource type="AudioStream" uid="uid://c0nw3yvg14jfx" path="res://src/assets/audial/sfx/voice/talk_done.wav" id="5_40inq"]
 [ext_resource type="AudioStream" uid="uid://cnknowcj5l2sp" path="res://src/assets/audial/sfx/voice/talk_game.ogg" id="5_pa6nk"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cg176qlmmrutf"]
 
 [ext_resource type="Texture2D" uid="uid://bwkh8nv7duoxy" path="res://src/assets/visual/dark_overlay-sheet.png" id="1_0og75"]
-[ext_resource type="Script" path="res://src/scripts/darkness.gd" id="2_mc2hg"]
+[ext_resource type="Script" uid="uid://csx0fqjnqtshe" path="res://src/scripts/darkness.gd" id="2_mc2hg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wfk4g"]
 atlas = ExtResource("1_0og75")
@@ -79,9 +79,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6jsg7"]
 _data = {
-"RESET": SubResource("Animation_lbmnx"),
-"fade_in": SubResource("Animation_6t16x"),
-"fade_out": SubResource("Animation_c8p2b")
+&"RESET": SubResource("Animation_lbmnx"),
+&"fade_in": SubResource("Animation_6t16x"),
+&"fade_out": SubResource("Animation_c8p2b")
 }
 
 [node name="Darkness" type="AnimatedSprite2D"]

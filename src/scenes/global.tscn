@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dsxhugusf58aq"]
 
-[ext_resource type="Script" path="res://src/scripts/global.gd" id="1_oxe11"]
-[ext_resource type="Script" path="res://src/scripts/global_music.gd" id="2_7w55h"]
+[ext_resource type="Script" uid="uid://6qlj2t7yj7ur" path="res://src/scripts/global.gd" id="1_oxe11"]
+[ext_resource type="Script" uid="uid://8nee1mx46bms" path="res://src/scripts/global_music.gd" id="2_7w55h"]
 
 [sub_resource type="Animation" id="Animation_ediby"]
 length = 0.001
@@ -50,9 +50,9 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6i10v"]
 _data = {
-"RESET": SubResource("Animation_ediby"),
-"cut from black": SubResource("Animation_y2u8m"),
-"cut to black": SubResource("Animation_dok0i")
+&"RESET": SubResource("Animation_ediby"),
+&"cut from black": SubResource("Animation_y2u8m"),
+&"cut to black": SubResource("Animation_dok0i")
 }
 
 [sub_resource type="Animation" id="Animation_ky665"]
@@ -88,8 +88,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hlw1d"]
 _data = {
-"RESET": SubResource("Animation_ky665"),
-"fade": SubResource("Animation_7wum4")
+&"RESET": SubResource("Animation_ky665"),
+&"fade": SubResource("Animation_7wum4")
 }
 
 [node name="Global" type="Node"]
@@ -106,7 +106,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="Transition" type="AnimationPlayer" parent="Black"]
 libraries = {
-"": SubResource("AnimationLibrary_6i10v")
+&"": SubResource("AnimationLibrary_6i10v")
 }
 
 [node name="Audio" type="AudioStreamPlayer" parent="."]
@@ -115,5 +115,5 @@ script = ExtResource("2_7w55h")
 [node name="Animation" type="AnimationPlayer" parent="Audio"]
 root_node = NodePath("../..")
 libraries = {
-"": SubResource("AnimationLibrary_hlw1d")
+&"": SubResource("AnimationLibrary_hlw1d")
 }

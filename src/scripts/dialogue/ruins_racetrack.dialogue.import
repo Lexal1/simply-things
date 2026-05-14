@@ -1,6 +1,7 @@
 [remap]
 
-importer="dialogue_manager_compiler_14"
+importer="dialogue_manager"
+importer_version=18
 type="Resource"
 uid="uid://bqglwychd6ee6"
 path="res://.godot/imported/ruins_racetrack.dialogue-e226dedf54ec20f432b65e8289b63439.tres"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://bipcueuskudk7"]
 
 [ext_resource type="Texture2D" uid="uid://pcc5d36i65je" path="res://src/assets/visual/vinx.png" id="1_cggui"]
-[ext_resource type="Script" path="res://src/scenes/minigames/racing/player.gd" id="1_e55sh"]
+[ext_resource type="Script" uid="uid://dv30u6v4x6dxt" path="res://src/scenes/minigames/racing/player.gd" id="1_e55sh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_20mw2"]
 sky_top_color = Color(0.129, 0.129, 0.129, 1)

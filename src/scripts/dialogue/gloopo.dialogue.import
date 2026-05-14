@@ -1,6 +1,7 @@
 [remap]
 
-importer="dialogue_manager_compiler_14"
+importer="dialogue_manager"
+importer_version=18
 type="Resource"
 uid="uid://do3pqmffhkuvs"
 path="res://.godot/imported/gloopo.dialogue-1df3229d666ecc37e6d4600d23750396.tres"

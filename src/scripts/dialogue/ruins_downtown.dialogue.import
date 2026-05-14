@@ -1,6 +1,7 @@
 [remap]
 
-importer="dialogue_manager_compiler_14"
+importer="dialogue_manager"
+importer_version=18
 type="Resource"
 uid="uid://fnym2hf1kspa"
 path="res://.godot/imported/ruins_downtown.dialogue-21fea8c249e9ce300aab0f7e4d2ebd71.tres"

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b3psftktrnd0w"]
 
-[ext_resource type="Script" path="res://src/scripts/zone.gd" id="1_bmypn"]
+[ext_resource type="Script" uid="uid://bs5qx4bah6x80" path="res://src/scripts/zone.gd" id="1_bmypn"]
 
 [node name="Zone" type="Area2D"]
 y_sort_enabled = true

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://0y4no3ud7yh3"]
 
-[ext_resource type="Script" path="res://src/scripts/door.gd" id="1_6ml1d"]
+[ext_resource type="Script" uid="uid://oq61mt8cf5d3" path="res://src/scripts/door.gd" id="1_6ml1d"]
 
 [node name="Door" type="Area2D"]
 y_sort_enabled = true
